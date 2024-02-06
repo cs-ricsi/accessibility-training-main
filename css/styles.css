@@ -235,3 +235,19 @@ li {
 .hidden {
   display: none;
 }
+
+a {
+  color: #0b44a0;
+  text-decoration: underline;
+}
+a:focus {
+  outline: 2px solid blue;
+}
+
+.input:focus {
+  outline: 2px solid blue;
+}
+
+.is-info {
+  background-color: blue !important;
+}
