@@ -251,10 +251,14 @@ a {
 
 a:focus {
   outline: 2px solid blue;
+  -moz-outline: 2px solid blue;
+  -webkit-outline: 2px solid blue;
 }
 
 .input:focus {
   outline: 2px solid blue;
+  -moz-outline: 2px solid blue;
+  -webkit-outline: 2px solid blue;
 }
 
 .button.is-info,
