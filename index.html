@@ -23,8 +23,8 @@
           </div>
 
           <div id="navbarMenu" class="navbar-menu">
-            <ul class="navbar-end">
-              <li class="navbar-item">
+            <ul role="menubar" class="navbar-end">
+              <li role="menuitem" class="navbar-item">
                 <a href="/" class="button is-white is-outlined">
                   <span class="icon">
                     <i class="fa fa-home"></i>
@@ -32,7 +32,7 @@
                   <span>Home</span>
                 </a>
               </li>
-              <li class="navbar-item">
+              <li role="menuitem" class="navbar-item">
                 <a href="/" class="button is-white is-outlined with-sublist" aria-controls="dropdown-menu" aria-expanded="false">
                   <span class="icon">
                     <i class="fab fa-superpowers"></i>
@@ -47,7 +47,7 @@
                   <li>Optimize</li>
                 </ul>
               </li>
-              <li class="navbar-item">
+              <li role="menuitem" class="navbar-item">
                 <a href="/" class="button is-white is-outlined">
                   <span class="icon">
                     <i class="fa fa-book"></i>
@@ -55,7 +55,7 @@
                   <span>Success stories</span>
                 </a>
               </li>
-              <li class="navbar-item">
+              <li role="menuitem" class="navbar-item">
                 <a href="/" class="button is-white is-outlined">
                   <span class="icon">
                     <i class="fab fa-github"></i>
@@ -127,8 +127,8 @@
           </ul>
           <h2 class="is-3 title">2022</h2>
           <p>Generally we have achieved <a>all our major goals</a>. And we are ready to help you to achieve yours</p>
-          <div class="blockquote">Success usually comes to those who are too busy looking for it. - Henry David Thoreau
-          </div>
+          <blockquote class="blockquote">Success usually comes to those who are too busy looking for it. - Henry David Thoreau
+          </blockquote>
           <p>We believe in investing in people. For 30+ years, the company has been expanding its expertise worldwide
             through numerous educational activities and materials to help beginners in tech gain in-demand skills.</p>
           <h2 class="is-2 title">2023</h2>
@@ -218,7 +218,7 @@
                       accessibility.
                     </p>
                     <p>That's a real magic!</p>
-                    <span class="button is-link modal-button" data-target="modal-image1" aria-haspopup="true">Learn more</span>
+                    <span role="button" class="button is-link modal-button" data-target="modal-image1" aria-haspopup="true">Learn more</span>
                   </div>
                 </div>
               </div>
@@ -236,7 +236,7 @@
                     <p>We were not so sure in success but we have had lots of new customers after implementing
                       accessibility.</p>
                     <p>We will recommend Best Company to our friends!</p>
-                    <span class="button is-link modal-button" data-target="modal-card" aria-haspopup="true">Learn more</span>
+                    <span role="button" class="button is-link modal-button" data-target="modal-card" aria-haspopup="true">Learn more</span>
                   </div>
                 </div>
               </div>
@@ -515,7 +515,7 @@
     </div>
   </footer>
 
-  <modal id="modal-card" class="modal modal-fx-3dSlit">
+  <modal role="dialog" aria-label="modal window for customer stories" id="modal-card" class="modal modal-fx-3dSlit">
     <div class="modal-background"></div>
     <div class="modal-content is-tiny">
       <div class="card">
@@ -544,13 +544,13 @@
     <button class="modal-close is-large"></button>
   </modal>
 
-  <div id="modal-image1" class="modal modal-fx-3dSlit">
+  <modal role="dialog" aria-label="modal window for customer stories" id="modal-image1" class="modal modal-fx-3dSlit">
     <div class="modal-background"></div>
     <div class="modal-content is-huge is-image">
       <img src="https://source.unsplash.com/random/?sig=1">
     </div>
     <button class="modal-close is-large"></button>
-  </div>
+  </modal>
 
   <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
   <script async src="js/custom.js"></script>
