@@ -33,16 +33,20 @@ figure {
   margin-bottom: -1px !important;
   position: relative;
 }
+
 .tab-content {
   padding: 2rem;
 }
+
 .tab-pane {
   display: none;
 }
+
 .tab-pane.is-active {
   display: block;
   position: relative;
 }
+
 .is-active {
   display: initial;
 }
@@ -70,6 +74,7 @@ figure {
   overflow: hidden;
   max-width: 100%;
 }
+
 .embed-container iframe,
 .embed-container object,
 .embed-container embed {
@@ -109,6 +114,7 @@ figure {
   position: relative;
   transition: all 0.2s ease-in-out;
 }
+
 .is-shady:hover {
   box-shadow: 0 10px 16px rgba(0, 0, 0, 0.13), 0 6px 6px rgba(0, 0, 0, 0.19);
 }
@@ -119,7 +125,7 @@ figure {
   overflow: hidden;
 }
 
-.skills-content .media + .media {
+.skills-content .media+.media {
   margin-top: .5rem;
 }
 
@@ -144,11 +150,13 @@ figure {
   line-height: 2.8;
   margin-bottom: 1rem;
 }
+
 .post {
   margin: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #E6EAEE;
 }
+
 .post:last-child {
   padding-bottom: 0;
   border-bottom: none;
@@ -234,4 +242,53 @@ li {
 
 .hidden {
   display: none;
+}
+
+a {
+  color: #0b44a0;
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: 2px solid blue;
+  -moz-outline: 2px solid blue;
+  -webkit-outline: 2px solid blue;
+}
+
+.input:focus {
+  outline: 2px solid blue;
+  -moz-outline: 2px solid blue;
+  -webkit-outline: 2px solid blue;
+}
+
+.button.is-info,
+.hero.is-info {
+  background-color: blue;
+}
+
+.visually-hidden {
+  /* Remove the item from normal flow */
+  position: absolute;
+  /* Workaround for falsely pronounced, smushed text */
+  white-space: nowrap;
+  /* Set it to the smallest possible size (some screen readers ignore elements with zero height and width) */
+  width: 1px;
+  height: 1px;
+  /* Hide overflowing content after resizing */
+  overflow: hidden;
+  /* Reset any property that may change the elements size */
+  border: 0;
+  padding: 0;
+  /* Clipping defines what part of an element should be displayed. */
+  /* Deprecated clip property for older browsers */
+  clip: rect(0 0 0 0);
+  /* clip-path for newer browsers. inset(50%) defines an inset rectangle that makes the content disappear.  */
+  clip-path: inset(50%); 
+    /* It seems like at the moment nobody is quite sure why margin: -1px is there. On top of that it seems to cause issues (see: https://github.com/h5bp/html5-boilerplate/issues/1985). */
+  margin: -1px;
+}
+
+ul.breadcrumb {
+  padding: 8px 16px;
+  list-style: none;
 }
