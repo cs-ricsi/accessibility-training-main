@@ -23,40 +23,40 @@
           </div>
 
           <div id="navbarMenu" class="navbar-menu">
-            <ul role="menubar" class="navbar-end">
-              <li role="menuitem" class="navbar-item">
-                <a href="/" class="button is-white is-outlined">
+            <ul role="menubar" class="navbar-end menubar-navigation">
+              <li role="none" class="navbar-item">
+                <a href="/" role="menuitem" class="button is-white is-outlined">
                   <span class="icon">
                     <i class="fa fa-home"></i>
                   </span>
                   <span>Home</span>
                 </a>
               </li>
-              <li role="menuitem" class="navbar-item">
-                <a href="/" class="button is-white is-outlined with-sublist" aria-controls="dropdown-menu" aria-expanded="false">
+              <li role="noe" class="navbar-item">
+                <a href="#services" role="menuitem" class="button is-white is-outlined with-sublist" aria-controls="dropdown-menu" aria-haspopup="true" aria-expanded="false">
                   <span class="icon">
                     <i class="fab fa-superpowers"></i>
                   </span>
                   <span>Services</span>
                 </a>
-                <ul id="dropdown-menu" class="sublist hidden">
-                  <li>Design</li>
-                  <li>Consult</li>
-                  <li>Engineer</li>
-                  <li>Operate</li>
-                  <li>Optimize</li>
+                <ul id="dropdown-menu" role="menu" aria-label="Services" class="sublist">
+                  <li role="menuitem">Design</li>
+                  <li role="menuitem">Consult</li>
+                  <li role="menuitem">Engineer</li>
+                  <li role="menuitem">Operate</li>
+                  <li role="menuitem">Optimize</li>
                 </ul>
               </li>
-              <li role="menuitem" class="navbar-item">
-                <a href="/" class="button is-white is-outlined">
+              <li role="none" class="navbar-item">
+                <a href="/" role="menuitem" class="button is-white is-outlined">
                   <span class="icon">
                     <i class="fa fa-book"></i>
                   </span>
                   <span>Success stories</span>
                 </a>
               </li>
-              <li role="menuitem" class="navbar-item">
-                <a href="/" class="button is-white is-outlined">
+              <li role="none" class="navbar-item">
+                <a href="/" role="menuitem" class="button is-white is-outlined">
                   <span class="icon">
                     <i class="fab fa-github"></i>
                   </span>
@@ -553,7 +553,7 @@
   </modal>
 
   <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
-  <script async src="js/custom.js"></script>
+  <script async src="js/menu.js"></script>
   <script async src="js/tab.js"></script>
 </body>
 
